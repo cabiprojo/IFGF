@@ -5,22 +5,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IFGF St Louis</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head>
 <body>
-    <div id="header">
+    <div id="header" class="about-header">
         <div class="container">
             <nav>
-                <img src="https://images.squarespace-cdn.com/content/v1/5eecfcd3670ecf6efe679b50/1593296227632-SI2LMX1X7QAOCPK6ZCK0/IFGF-LA-white.png?format=1500w" class="logo">
-                <ul>
+                <a href="index.html">
+                    <img src="IFGF-STL-LOGO.png" class="logo" alt="IFGF Logo">
+                </a>
+                
+                <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="community.html">Community</a></li>
                     <li><a href="#footer">Connect</a></li>
                     <a href="giving.html" class="give-link">Giving</a>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
                 </ul>
+                 
+                <i class="fas fa-bars" onclick="openmenu()"></i>  
             </nav>
         </div>
     </div>
+    <div class="top-banner">
+        <div class="top-banner-p">
+            <p><span class="bold-letter">I</span>nternational <span class="bold-letter">F</span>ull 
+                <span class="bold-letter">G</span>ospel <span class="bold-letter">F</span>ellowship</p>
+            <p>in St Louis</p>
+        </div>
+    </div>
+    <div class="mission-about">
+        <p class="our-mission">OUR MISSION</p>
+        <h1>PEOPLE IS OUR MISSION</h1>
+        <p class="mission-statement">We are called to fulfill the Great Commission,<br>
+            not only to let people know about God and the eternal salvation,<br>
+            but touching hearts, improving lives, and creating second chances.<br>
+            We are here for the people, as a humble servant and wise counsel.<br>
+            We focus on the people, creating impact and changing them for the better.</p>
+    </div>
+    <div class="vision-about">
+        <p class="our-vision">OUR VISION</p>
+        <img src="IFGF-vision.jpg" class="vision-images" alt="IFGF vision">
+    </div>
+    <div class="partners-about">
+        <p class="our-partners">OUR PARTNERS</p>
+        <div class="partner-links">
+            <a href="https://ifgf.global/">
+                <img src="IFGF-GLOBAL.jpg" class="IFGF-global-link" alt="">
+                
+            </a>
+
+            <a href="https://www.ifgfaus.org/">
+                <img src="IFGF-AUSTIN.jpg" class="IFGF-austin-link" alt="IFGF Austin Logo">
+                
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="team-block">
+        <p>Meet Our Team</p>
+    </div>
+
+    <footer id="footer">
+        <div class="contact-left">
+            <p class="connect-with-us">CONNECT WITH US</p>
+            <!--<h3>WE WOULD LOVE TO HEAR FROM YOU</h3>-->
+            <!--<p class="footer-info">Fellowship locations vary monthly</p>-->
+            <!--<p class="footer-info"></p>Phone: (123) 456-7890</p>-->
+            <p class="footer-info"></p>Email: ifgfstl@gmail.com</p>
+            <a href="index.html">
+                <img src="IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
+            </a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+       
+        
+    </footer>
+
     
 </body>
 </html>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right="0";
+    }
+    function closemenu() {
+        sidemenu.style.right="-200px";
+    }
+
+</script>
