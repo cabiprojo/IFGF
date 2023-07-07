@@ -86,8 +86,12 @@
     }
 
     .arch {
-        width:400px;
+        width:380px;
         height:270px;
+    }
+
+    .location-asterik{
+        width:380px;
     }
 
     .contact-left {
@@ -122,6 +126,11 @@
         
        }
 
+       .logo-footer{
+        padding-top:50px;
+      
+    }
+
 
        /*ABOUT-------------------------------------------------------*/
 
@@ -148,6 +157,7 @@
        .mission-about {
         font-size: 20px;
         padding-left:20px;
+        height:300px;
     }
 
 
@@ -193,12 +203,9 @@
     @media (max-width: 600px) {
 
         #header{
-            /*background-color: rgba(0, 0, 0, 0.9); */
-           
             width:100%;
             height:100vh;
             background-size: 200%; /* Adjusted property */
-            
         }
     }
   
