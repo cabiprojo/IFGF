@@ -1,4 +1,15 @@
 @media (max-width: 950px) {
+
+    #header{
+        /*background-color: rgba(0, 0, 0, 0.9); */
+       
+        width:100%;
+        height:100vh;
+        background-size: 130%; /* Adjusted property */
+        
+    }
+
+
     .mission-about h1{
         font-size: 60px;
        }
@@ -43,27 +54,40 @@
         cursor:pointer;
       }
 
+      #header{
+        /*background-color: rgba(0, 0, 0, 0.9); */
+       
+        width:100%;
+        height:100vh;
+        background-size: 150%; /* Adjusted property */
+        background-position: center;
+        
+    }
+    
+
       .welcome-block{
         text-align: center;
+        font-size: 80px;
       }
 
       .mission-block {
-        font-size: 50px;
+        font-size: 40px;
         height: 400px;
     }
 
       .mission span{
-        font-size: 80px;
+        font-size: 60px;
        
     }
 
+   
     .service-block {
         flex-direction: column;
     }
 
     .arch {
-        width:450px;
-        height:300px;
+        width:400px;
+        height:270px;
     }
 
     .contact-left {
@@ -79,6 +103,14 @@
        
        }
 
+    .service-left h2 {
+        font-size: 30px;
+    }
+
+    .service-left p {
+        font-size: 20px;
+    }
+
 
     footer {
         flex-direction: column;
@@ -86,9 +118,12 @@
     }
 
     form input, form textarea {
-        width:400px;
+        width:300px;
         
        }
+
+
+       /*ABOUT-------------------------------------------------------*/
 
 
        .top-banner{
@@ -112,20 +147,23 @@
 
        .mission-about {
         font-size: 20px;
+        padding-left:20px;
     }
+
 
        .mission-about h1{
         font-size: 30px;
        }
 
        .mission-statement {
-        width:400px;
-        font-size: 22px;
+        width:380px;
+        font-size: 18px;
     }
 
     .vision-about {
         font-size: 20px;
         height:300px;
+        padding-left:20px;
     }
 
        .vision-images {
@@ -136,6 +174,7 @@
        .partners-about {
         height:200px;
         font-size: 20px;
+        padding-left:20px;
        }
 
        .IFGF-global-link {
@@ -147,6 +186,19 @@
             padding-top: 30px;
             padding-left:50px;
             width:150px;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+
+        #header{
+            /*background-color: rgba(0, 0, 0, 0.9); */
+           
+            width:100%;
+            height:100vh;
+            background-size: 200%; /* Adjusted property */
+            
         }
     }
   
