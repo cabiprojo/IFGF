@@ -89,9 +89,20 @@ nav .fas {
     display:none;
    }
 
-.fas.fa-bars{
-    padding-right: 15px;
-}
+.fas.fa-bars {
+    position: fixed;
+    top: 45px;
+    right: 35px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
+    padding: 7px;
+    transition:0.3s;
+  }
+
+  .fas.fa-bars:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+  }
 
 main {
     position: relative;
