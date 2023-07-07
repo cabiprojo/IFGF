@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family: proxima-nova;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -9,20 +9,33 @@ html {
   }
 
 .logo{
-    width:140px;
+    width:160px;
     cursor: pointer;
+    align-items: left;
 }
-
-
 
 #header{
-    background-color: rgba(0, 0, 0, 0.9);
+    /*background-color: rgba(0, 0, 0, 0.9); */
+   
     width:100%;
-    height:15vh;
+    height:100vh;
+    background-size: 100%; /* Adjusted property */
+    background-position: center;
+    
 }
 
+.index-header {
+    background-image: url("https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80");
+  }
+  
+  .about-header {
+    height:0 !important;
+  }
+
 .container {
-    padding: 10px 10%;
+    padding: 10px 0%;
+    padding-right: 2%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav{
@@ -30,7 +43,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top:20px
+    padding-top:20px;
+    
 }
 
 .give-link {
@@ -38,6 +52,7 @@ nav{
     color: rgb(59, 156, 247);
     display: inline-block;
     padding: 8px 20px;
+    margin-left: 20px;
     text-decoration: none;
     font-size: 21px;
     border: 2px solid rgb(59, 156, 247);
@@ -69,6 +84,10 @@ nav ul li a:hover{
 
 }
 
+nav .fas {
+    display:none;
+   }
+
 main {
     position: relative;
     width: 100%;
@@ -76,16 +95,18 @@ main {
 }
 
 .welcome-block {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80');
-    background-size: cover;
+    /*background-image: url('https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80');*/
+    background-size: 100%;
     background-position: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     font-size: 100px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .mission-block {
@@ -136,6 +157,14 @@ s
 .location-asterik {
     font-size: 10px;
 }
+.contact-us-link {
+    text-decoration: none;
+    color:rgb(59, 156, 247);
+}
+
+.contact-us-link:hover {
+    color:rgb(26, 114, 196);
+}
 
 .service-info {
     width:500px;
@@ -162,13 +191,19 @@ s
     align-items: center; /* Center the content vertically */
     background-color: rgb(218, 217, 217);
     width: 100%;
-    height: 600px;
-    font-size: 70px;
+    height: 200px;
+    font-size: 50px;
     color: black;
+    text-align: center;
     
 }
 
 footer {
+    
+    display: flex;
+ flex-direction: row;
+  position: relative;
+  justify-content: center;
     padding-top: 60px;
     width:100%;
     height:500px;
@@ -179,6 +214,81 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.footer p{
+    text-align: left;
+}
+
 .footer-info {
     margin-bottom:30px;
 }
+
+.logo-footer{
+    padding-top:150px;
+    width:200px;
+}
+
+.contact-left {
+    padding-left: 200px;
+    line-height: 40px;
+    flex-basis:50%;
+    text-align: left;
+   }
+
+   .connect-with-us{
+    color:rgb(59, 156, 247);
+    font-size: 40px;
+   }
+   
+   .contact-right {
+    flex-basis:50%;
+   }
+
+footer h3{
+    color:white;
+}
+
+.contact-right form {
+    display: flex;
+    width:fit-content;
+    flex-direction: column;
+    padding-bottom: 30px;
+   
+   }
+   
+   
+   form input, form textarea {
+    width:500px;
+    border:0;
+    outline: none;
+    background: #ffffff;
+    padding:15px;
+    margin: 15px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius:15px;
+    border: 2px solid rgb(59, 156, 247);
+    border-color:rgb(59, 156, 247);
+    box-sizing: border-box;
+   }
+   
+   .btn {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(59, 156, 247);
+    border: 1px solid rgb(47, 140, 228);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   
+   .btn:hover {
+    background-color: rgb(22, 113, 197);
+   }
+   
+   .btn:active {
+    background-color: rgb(10, 86, 156);
+   }
