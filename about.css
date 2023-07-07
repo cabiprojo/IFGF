@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    outline: none; /* Remove outline/border */
+  }
+
+.top-banner{
+    text-align: center;
+    font-size: 60px;
+    
+    padding-top: 0px;
+    height:500px;
+    color:white;
+    background-image: url("https://www.shortform.com/blog/wp-content/uploads/2020/10/jeannette-walls-family-glass-castle-scaled.jpg");
+    background-size: cover;
+    background-position: center bottom 50% ;
+}
+
+.top-banner-p{
+    
+    padding-top: 160px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    height:100%;
+}
+
+.bold-letter{
+    color: white; /* Set the color for the first letter of each span */
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.mission-about {
+    text-align:left;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left:50px;
+    height:400px;
+    background-color: white;
+}
+
+.our-mission {
+    color: rgb(59, 156, 247);
+    margin-bottom:20px;
+}
+
+.mission-statement {
+    width:900px;
+    color:rgb(109, 107, 107);
+    font-size: 26px;
+    margin-top:20px;
+}
+
+.partners-about {
+    
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left:50px;
+    height:400px;
+    background-color: white;
+}
+
+.partner-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.our-partners {
+    color: rgb(59, 156, 247);
+}
+
+.IFGF-austin-link {
+    padding-top: 30px;
+    padding-left:150px;
+    width:250px;
+}
+
+.vision-about {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left:50px;
+    height:700px;
+    background-color: white;
+}
+.our-vision {
+    color: rgb(59, 156, 247);
+}
+
+.vision-images {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-block {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    height:500px;
+    background-color: white;
+}
+    
