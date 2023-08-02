@@ -1,0 +1,235 @@
+
+
+.top-banner.community{
+    text-align: center;
+    font-size: 60px;
+    
+    padding-top: 0px;
+    height:500px;
+    color:white;
+    background-image: url("images/2018-retreat-group.jpg");
+    background-size: cover;
+    background-position: 45% 55%;
+}
+
+.top-banner-p{
+    
+    padding-top: 160px;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    height:100%;
+}
+
+.community-gallery {
+    text-align:left;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left:50px !important;
+    height:fit-content;
+    background-color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 200px;
+ 
+  }
+  
+  .box {
+    width: 400px; /* Initially display 3 boxes per row */
+    height:250px;
+
+   
+    box-sizing: border-box;
+
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+   background-color: rgb(91, 92, 92);
+
+    /* Add other box styles as desired */
+  }
+
+  .box p{
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:100%;
+    width:100%;
+  }
+
+
+  .box:hover{
+    transform: scale(1.02);
+  }
+
+  .modal p{
+    color:white;
+    font-size: 20px;
+  }
+
+  .gallery-images img{
+    width:95%;
+    height:auto;
+  }
+
+  .box.year2012 {
+    position: relative;
+    background-image: url("images/2012-1.jpg");
+    background-position: center bottom 80%;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
+
+ 
+  .box.year2013 {
+    background-image:url("images/2013-4.jpg");
+    background-position: center bottom 60% ;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+
+
+  .box.year2014 {
+    background-image:url("images/2014-easter-group.jpg");
+    background-position: center bottom 00% ;
+    background-size: 130%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+
+  .box.year2016 {
+    background-image:url("images/2016-retreat-group.jpg");
+    background-position: center bottom 60% ;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+  .box.year2017 {
+    background-image:url("images/2017-easter-group.jpg");
+    background-position: center bottom 60% ;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+  .box.year2018 {
+    background-image:url("images/2018-easter-group.jpg");
+    background-position: center bottom 60% ;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+  .box.year2019 {
+    background-image:url("images/2019-easter-group.jpg");
+    background-position: center bottom 60% ;
+    background-size: 110%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+  .box.year2021 {
+    background-image:url("images/2021-october-group.jpg");
+    background-position: center bottom 60% ;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    
+  }
+
+
+  .modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color:rgb(54, 53, 53);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+}
+
+    .modal p {
+        margin-bottom: 20px;
+    }
+  
+  .modal-content {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10% auto;
+    
+    width: 80%;
+
+    height: fit-content;
+  }
+
+  .modal h2 {
+    margin-bottom: 40px;
+  }
+
+  .arrow-btn{
+    position:fixed;
+    font-size: 60px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    border: none;
+    width:100px;
+    height:auto;
+  }
+
+  .arrow-btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);;
+  }
+
+  .left-arrow {
+    top:50%;
+    left: 2%;
+  }
+  
+  .right-arrow {
+    top:50%;
+    right: 2%;
+  }
+  
+  .close {
+    position:absolute;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 10px;
+    top:0;
+    text-decoration: none;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    
+    cursor: pointer;
+  }
+  
+  /* Media queries for responsive layout */
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 50%; /* Display 2 boxes per row on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box {
+      width: 100%; /* Display 1 box per row on smaller screens */
+    }
+  }
