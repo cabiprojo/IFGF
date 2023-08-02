@@ -1,3 +1,52 @@
+@media (max-width: 1650px) {
+    .box {
+        width: 350px; /* Initially display 3 boxes per row */
+        height:220px;
+    
+        /* Add other box styles as desired */
+      }
+
+      .gallery{
+        padding:0 0 100px 0;
+
+       
+    }
+
+}
+
+
+@media (max-width: 1350px) {
+    .mission-about{
+        height:500px;
+    }
+
+    .mission span{
+        font-size: 80px;
+
+    }
+
+ 
+    .mission-block {
+        font-size: 50px;
+        height:150px;
+    }
+    
+    .arch {
+        width:450px;
+       
+    }
+    
+
+}
+
+@media (max-width: 1150px) {
+    .vision-about{
+        height:1050px;
+        
+    }
+}
+
+
 @media (max-width: 1050px) {
 
     #header{
@@ -9,17 +58,47 @@
         background-position: 20% center;
     }
 
+    .mission-block {
+       
+        height: 250px;
+    }
+
+    
+
 
     .mission-about h1{
         font-size: 60px;
        }
     .mission-statement {
-        width:700px;
+        
         font-size: 24px;
     }
+
+    .welcome-block {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-size: 100%;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        font-size: 90px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .arch {
+        width:370px;
+       
+    }
+
+    
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     nav .fas {
         display:block;
         font-size: 25px;
@@ -68,11 +147,12 @@
       .welcome-block{
         text-align: center;
         font-size: 80px;
+  
       }
 
       .mission-block {
         font-size: 40px;
-        height: 400px;
+        height: 200px;
     }
 
       .mission span{
@@ -85,13 +165,14 @@
         flex-direction: column;
     }
 
-    .arch {
-        width:380px;
-        height:270px;
-    }
+
 
     .location-asterik{
         width:380px;
+    }
+
+    form input, form textarea {
+        max-width:460px;
     }
 
     .contact-left {
@@ -107,6 +188,11 @@
        
        }
 
+       .arch {
+        width:400px;
+       
+    }
+
     .service-left h2 {
         font-size: 30px;
     }
@@ -118,13 +204,10 @@
 
     footer {
         flex-direction: column;
-        height:900px;
+        height:700px;
     }
 
-    form input, form textarea {
-        width:300px;
-        
-       }
+
 
        .logo-footer{
         padding-top:50px;
@@ -155,52 +238,64 @@
 
 
        .mission-about {
-        font-size: 20px;
         padding-left:20px;
-        height:300px;
+        height:500px;
+        font-size: 30px;
+    }
+
+    .vision-about{
+        height:1050px;
+        padding-left:20px;
     }
 
 
-       .mission-about h1{
-        font-size: 30px;
-       }
+  
 
        .mission-statement {
-        width:380px;
-        font-size: 18px;
+        width:480px;
+        font-size: 25px;
     }
 
-    .vision-about {
-        font-size: 20px;
-        height:300px;
-        padding-left:20px;
-    }
 
-       .vision-images {
-        max-width:600px;
-        padding-left: 0;
-       }
+
+   
+
+       .partner-links{
+        flex-direction: column;
+    }
 
        .partners-about {
-        height:200px;
-        font-size: 20px;
+        height:500px;
+        font-size: 30px;
         padding-left:20px;
        }
 
        .IFGF-global-link {
         padding-left:0px;
-        width:150px;
+        width:250px;
     }
 
         .IFGF-austin-link {
             padding-top: 30px;
-            padding-left:50px;
-            width:150px;
+            padding-left:0px;
+            width:250px;
         }
+
+        /*350 220*/
+    
+       /* COMMUNITY */
+       .modal-content {
+
+        
+        width: 100%;
+
+      }
     }
 
+    
 
     @media (max-width: 600px) {
+        
 
         #header{
            
@@ -213,9 +308,29 @@
             width:400px;
             padding-bottom:50px;
         }
+
+        .vision-about {
+        
+            height:900px;
+           
+        }
+
+        .vision-images {
+            height:350px;
+            width: auto;
+        }
+
+        .mission-block {
+            font-size: 40px;
+            height: 280px;
+        }
+
+   
     }
 
+
     @media (max-width: 480px) {
+  
 
         #header{
      
