@@ -9,7 +9,8 @@ a {
     outline: none; /* Remove outline/border */
   }
 
-.top-banner{
+
+.top-banner.about{
     text-align: center;
     font-size: 60px;
     
@@ -30,28 +31,30 @@ a {
 
 .bold-letter{
     color: white; /* Set the color for the first letter of each span */
-    font-size: 70px;
-    font-weight: bold;
-}
-
-.mission-about {
-    text-align:left;
-    font-size: 40px;
-    padding-top: 50px;
-    padding-left:50px;
-    height:400px;
-    background-color: white;
+    /*font-size: 70px;
+    font-weight: bold;*/
 }
 
 .our-mission {
+    font-size: 30px;
     color: rgb(59, 156, 247);
     margin-bottom:20px;
 }
 
+.mission-about {
+    text-align:left;
+    font-size: 67px;
+    padding-top: 50px;
+    padding-left:50px;
+    height:400px;
+    background-color: white;
+    
+}
+
 .mission-statement {
-    width:900px;
+    width:max-content;
     color:rgb(109, 107, 107);
-    font-size: 26px;
+    font-size: 27px;
     margin-top:20px;
 }
 
@@ -87,26 +90,40 @@ a {
     font-size: 40px;
     padding-top: 50px;
     padding-left:50px;
-    height:700px;
+    height:600px;
     background-color: white;
 }
 .our-vision {
+    font-size: 30px;
     color: rgb(59, 156, 247);
 }
 
 .vision-images {
   padding-top: 40px;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  height:450px;
+  width: auto;
 }
 
 .team-block {
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
-    height:500px;
+    height:800px;
     background-color: white;
+}
+
+.team-pfps {
+    font-size: 30px;
+}
+
+.team-pfps span{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.team-pfps img{
+    padding-top: 50px;
+    width:auto;
+    height:500px;
 }
     
