@@ -311,18 +311,31 @@
 
         .vision-about {
         
-            height:900px;
+            height:850px;
            
         }
 
-        .vision-images {
-            height:350px;
-            width: auto;
-        }
+  
 
         .mission-block {
             font-size: 40px;
             height: 280px;
+        }
+
+        .mission-statement {
+            max-width:90%;
+            font-size: 22px;
+        }
+
+        .vision-images {
+            padding-top: 40px;
+            height:auto;
+            width:95%;
+          }
+
+          .community-gallery {
+            padding-left:0 !important;;
+     
         }
 
    
@@ -342,5 +355,10 @@
         .location-asterik{
             width:380px;
         }
+
+        form input, form textarea {
+            max-width:350px;
+        }
+    
     }
   
