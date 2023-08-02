@@ -189,7 +189,7 @@
        }
 
        .arch {
-        width:400px;
+        width:350px;
        
     }
 
@@ -311,7 +311,7 @@
 
         .vision-about {
         
-            height:850px;
+            height:900px;
            
         }
 
@@ -319,7 +319,7 @@
 
         .mission-block {
             font-size: 40px;
-            height: 280px;
+            height: 320px;
         }
 
         .mission-statement {
@@ -352,12 +352,16 @@
             
         }
 
+        .welcome{
+            font-size: 80px !important;
+        }
+
         .location-asterik{
             width:380px;
         }
 
         form input, form textarea {
-            max-width:350px;
+            max-width:300px;
         }
     
     }
