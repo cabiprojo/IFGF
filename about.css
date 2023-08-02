@@ -98,6 +98,11 @@ a {
     color: rgb(59, 156, 247);
 }
 
+.vision-subheading{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
 .vision-images {
   padding-top: 40px;
   height:450px;
