@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFGF St Louis</title>
+    <link rel="shortcut icon" type="x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -12,20 +13,17 @@
         <div id="header" class="index-header">
             <div class="container">
                 <nav>
-                    
                     <a href="index.html">
-                        <img src="IFGF-STL-LOGO.png" class="logo" alt="IFGF Logo">
+                        <img src="images/IFGF-STL-LOGO.png" class="logo" alt="IFGF Logo">
                     </a>
-                    
                     <ul id="sidemenu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="community.html">Community</a></li>
+                        <li><a href="index.html" id="home-link">Home</a></li>
+                        <li><a href="about.html" id="about-link">About</a></li>
+                        <li><a href="community.html" id="community-link">Community</a></li>
                         <li><a href="#footer" onclick="closemenu()">Connect</a></li>
-                        <a href="giving.html" class="give-link">Giving</a>
+                        <a href="giving.html" class="give-link">Give</a>
                         <i class="fas fa-times" onclick="closemenu()"></i> 
                     </ul>
-                     
                     <i class="fas fa-bars" onclick="openmenu()"></i>  
                 </nav>
             </div>
@@ -35,13 +33,8 @@
         </div>
 
         <main>
-            
-            
-
             <div class="mission-block">
                 <p class="mission"><span>PEOPLE IS OUR MISSION</span><br>CONNECT WITH GOD. MAKE DISCIPLES.</p>
-
-            
             </div>
 
             <div class="service-block">
@@ -74,7 +67,10 @@
                 <!--<p class="footer-info"></p>Phone: (123) 456-7890</p>-->
                 <p class="footer-info"></p>Email: ifgfstl@gmail.com</p>
                 <a href="index.html">
-                    <img src="IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
+                    <img src="images/IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
+                </a>
+                <a href="https://www.facebook.com/groups/100389723447571" class="facebook-link">
+                    <i class="fab fa-facebook"></i>
                 </a>
             </div>
             <div class="contact-right">
@@ -85,16 +81,45 @@
                     <button class="btn" type="submit">Send</button>
                 </form>
             </div>
-           
-            
         </footer>
-
-        
-        
     </body>
 </html>
 
 <script>
+    const currentPageUrl = window.location.pathname;
+
+// Function to highlight the active link based on the current page
+function highlightActiveLink() {
+    const homeLink = document.getElementById("home-link");
+    const aboutLink = document.getElementById("about-link");
+    const communityLink = document.getElementById("community-link");
+    // Add other link variables for other pages as needed
+
+    if (currentPageUrl.includes("index.html")) {
+        homeLink.classList.add("active");
+    } else {
+        homeLink.classList.remove("active");
+    }
+
+    if (currentPageUrl.includes("about.html")) {
+        aboutLink.classList.add("active");
+    } else {
+        aboutLink.classList.remove("active");
+    }
+
+    if (currentPageUrl.includes("community.html")) {
+        communityLink.classList.add("active");
+    } else {
+        communityLink.classList.remove("active");
+    }
+
+    // Add similar if-else blocks for other pages as needed
+}
+
+// Call the function to highlight the active link when the page loads
+highlightActiveLink();
+
+
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu() {
@@ -103,5 +128,52 @@
     function closemenu() {
         sidemenu.style.right="-200px";
     }
+
+
+    const images = [
+    "https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80",
+    "images/july-handling-conflicts.png"
+    
+  ];
+  
+  let currentImageIndex = 0;
+  const indexHeader = document.querySelector(".index-header");
+  const welcomeText = document.querySelector(".welcome");
+  
+  function changeBackgroundImage() {
+
+
+    indexHeader.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+
+    if (currentImageIndex === 1) {
+        welcomeText.textContent = "Welcome Home";
+        welcomeText.style.backgroundColor = "transparent";
+        welcomeText.style.borderRadius = "0";
+        welcomeText.style.fontSize = "110px";
+  } else if (currentImageIndex === 0) {
+        welcomeText.textContent = "Join our August 2023 Series";
+        welcomeText.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        welcomeText.style.borderRadius = "20px";
+        welcomeText.style.fontSize = "70px";
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 600) {
+        welcomeText.textContent = "Join our ";
+        const lineBreak = document.createElement("br");
+        welcomeText.appendChild(lineBreak);
+        welcomeText.appendChild(document.createTextNode("August 2023 Series"));
+        }
+
+// Append the new span element to the welcomeText
+
+  }
+
+  }
+  
+  // Call the function initially
+  changeBackgroundImage();
+  
+  // Set the interval to change background every 3 seconds (adjust the time as needed)
+  setInterval(changeBackgroundImage, 5000);
 
 </script>
