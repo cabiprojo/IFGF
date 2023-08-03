@@ -1,7 +1,10 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  
+  var galleryEaster = document.getElementById("gallery-easter");
+    var galleryXmas = document.getElementById("gallery-xmas");
+    var galleryRetreat = document.getElementById("gallery-retreat");
+    var galleryMonthly = document.getElementById("gallery-monthly");
 
     var gallery2012 = document.getElementById("gallery-2012");
     var gallery2013 = document.getElementById("gallery-2013");
@@ -17,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var gallery2023 = document.getElementById("gallery-2023");
     
     // Get the link elements
+var boxEaster = document.getElementById("box-easter");
+    var boxXmas = document.getElementById("box-xmas");
+    var boxRetreat = document.getElementById("box-retreat");
+    var boxMonthly = document.getElementById("box-monthly");
+  
     var box2012 = document.getElementById("box-2012");
     var box2013 = document.getElementById("box-2013");
     var box2014 = document.getElementById("box-2014");
@@ -32,6 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
     // Get the close button elements
+  var galleryCloseBtnEaster = document.getElementById("gallery-close-btn-easter");
+    var galleryCloseBtnXmas = document.getElementById("gallery-close-btn-xmas");
+    var galleryCloseBtnRetreat = document.getElementById("gallery-close-btn-retreat");
+    var galleryCloseBtnMonthly = document.getElementById("gallery-close-btn-monthly");
+
+  
     var galleryCloseBtn = document.getElementById("gallery-close-btn-2012");
     var galleryCloseBtn2013 = document.getElementById("gallery-close-btn-2013");
     var galleryCloseBtn2014 = document.getElementById("gallery-close-btn-2014");
@@ -46,6 +60,58 @@ document.addEventListener('DOMContentLoaded', function() {
     var galleryCloseBtn2023 = document.getElementById("gallery-close-btn-2023");
     
     // Open the join modal when the join link is clicked
+
+   boxEaster.addEventListener("click", function(event) {
+      event.preventDefault();
+      galleryEaster.style.display = "block";
+  });
+
+  galleryCloseBtnEaster.addEventListener("click", function() {
+      
+
+      galleryEaster.style.display = "none";
+      
+    });
+
+    boxXmas.addEventListener("click", function(event) {
+      event.preventDefault();
+      galleryXmas.style.display = "block";
+    });
+
+    galleryCloseBtnXmas.addEventListener("click", function() {
+        
+        galleryXmas.style.display = "none";
+
+        
+      });
+
+    boxRetreat.addEventListener("click", function(event) {
+        event.preventDefault();
+        galleryRetreat.style.display = "block";
+    });
+
+    galleryCloseBtnRetreat.addEventListener("click", function() {
+        
+
+      galleryRetreat.style.display = "none";
+      
+    });
+    
+
+    boxMonthly.addEventListener("click", function(event) {
+        event.preventDefault();
+        galleryMonthly.style.display = "block";
+      });
+      galleryCloseBtnMonthly.addEventListener("click", function() {
+        
+
+        galleryMonthly.style.display = "none";
+        
+      });
+  
+
+
+  
     box2012.addEventListener("click", function(event) {
       event.preventDefault();
       gallery2012.style.display = "block";
