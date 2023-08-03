@@ -78,19 +78,19 @@
     height:auto;
   }
 
-  .box.year2012 {
+    .box.yearEaster {
     position: relative;
-    background-image: url("images/2012-1.jpg");
+    background-image: url("images/2014-easter-group.jpg");
     background-position: center bottom 80%;
-    background-size: 100%;
+    background-size: 130%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
 
 
  
-  .box.year2013 {
-    background-image:url("images/2013-4.jpg");
+  .box.yearXmas {
+    background-image:url("images/2016-xmas-group.jpg");
     background-position: center bottom 60% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -98,44 +98,16 @@
   }
 
 
-  .box.year2014 {
-    background-image:url("images/2014-easter-group.jpg");
-    background-position: center bottom 00% ;
-    background-size: 130%;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    
-  }
-
-  .box.year2016 {
+  .box.yearRetreat {
     background-image:url("images/2016-retreat-group.jpg");
-    background-position: center bottom 60% ;
+    background-position: center bottom 80% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
     
   }
-  .box.year2017 {
-    background-image:url("images/2017-easter-group.jpg");
-    background-position: center bottom 60% ;
-    background-size: 100%;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    
-  }
-  .box.year2018 {
-    background-image:url("images/2018-easter-group.jpg");
-    background-position: center bottom 60% ;
-    background-size: 100%;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    
-  }
-  .box.year2019 {
-    background-image:url("images/2019-easter-group.jpg");
-    background-position: center bottom 60% ;
-    background-size: 110%;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    
-  }
-  .box.year2021 {
-    background-image:url("images/2021-october-group.jpg");
+
+  .box.yearMonthly {
+    background-image:url("images/2013-1.jpg");
     background-position: center bottom 60% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -204,7 +176,7 @@
   
   .close {
     position:absolute;
-    color: #aaa;
+    color: #d4d4d4;
     float: right;
     font-size: 28px;
     font-weight: bold;
