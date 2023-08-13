@@ -118,6 +118,42 @@ main {
     height: fit-content;
 }
 
+.fa.fa-angle-down{
+    position:absolute;
+    font-size: 60px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.0);
+    bottom:4%;
+    left:50%;
+    border: none;
+    width:100px;
+    height:auto;
+    cursor: pointer;
+}
+
+.arrow-btn{
+    position:absolute;
+    font-size: 60px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.0);
+
+    border: none;
+    width:100px;
+    height:auto;
+  }
+
+
+
+  .down-arrow {
+    color:white;
+    bottom:2%;
+    left:46%;
+    padding-right: 15px;
+    
+  }
+  
+ 
+
 .welcome-block {
     
     display: flex;
@@ -205,6 +241,26 @@ s
 .arch {
     width:550px;
     height:auto;
+}
+
+.prayer-block{
+    height:fit-content;
+    padding-top: 50px;
+}
+
+.prayer-request{
+    width:100%;
+    height:auto;
+    
+}
+
+.prayer-description{
+    text-align: center;
+    font-size: 30px;
+    width:70%;
+    padding-left:15%;
+    padding-top: 60px;
+    padding-bottom:100px;
 }
 
 
@@ -311,12 +367,13 @@ footer h3{
    
    .btn {
     color: white;
+    
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(59, 156, 247);
     border: 1px solid rgb(47, 140, 228);
     border-radius: 10px;
-    width: 200px;
+    width: 500px;
     height: 50px;
     padding: 10px;
     cursor: pointer;
