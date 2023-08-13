@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="main.js"></script>
 </head>
     <body>
         <div id="header" class="index-header">
@@ -30,20 +31,23 @@
             <div class="welcome-block">
                 <p class="welcome">Welcome Home</p>
             </div>
+            <a href="#mission-block"><i  class="fa fa-angle-down"></i></a>
+
         </div>
 
         <main>
-            <div class="mission-block">
+            <div class="mission-block" id="mission-block">
                 <p class="mission"><span>PEOPLE IS OUR MISSION</span><br>CONNECT WITH GOD. MAKE DISCIPLES.</p>
             </div>
 
             <div class="service-block">
                 <div class="service-left">
                     <h2>Service Time</h2>
-                    <p class="service-info">Every 3rd Saturday at 2 PM</p>
+                    <p class="service-info">Every 3rd Saturday at 1 PM CST</p>
                     <h2>Location*</h2>
                     <p class="service-info">A home in the St Louis area</p>
-                    <p class="location-asterik">*Locations vary monthly, <a href="#footer" class="contact-us-link">contact us</a> to stay updated</p>
+                    <p class="location-asterik">*Locations vary monthly, <a href="#footer" class="contact-us-link">contact us</a> to stay updated<br>Join us on 
+                        <a href="https://us02web.zoom.us/j/82275259502?pwd=cTlNS0lYbXloZkFWMXZWbUNsTmxNdz09" class="contact-us-link">Zoom</a></p>
                 </div>
                 <div class="service-right">
                     <!-- Place your images here -->
@@ -52,6 +56,14 @@
                     <!--<img src="image2.jpg" alt="Image 2"> -->
                 </div>
             </div>
+            <div class="prayer-block">
+                <img src="images/prayer-request.png" class="prayer-request" alt="">
+                <p class="prayer-description">Share your prayer requests with us! We have a prayer team who are passionate to pray for you. Connect to us with our
+                    <a href="#footer" class="contact-us-link">form</a> and let us know how we can stand with you. Enter your requests in Message and
+                    if you wish for your name/email to remain anonymous, enter PRAY.
+                </p>
+            </div>
+
 
             <div class="event-block">
                 <p class="upcoming-events">Upcoming Events</p>
@@ -65,25 +77,28 @@
                 <!--<h3>WE WOULD LOVE TO HEAR FROM YOU</h3>-->
                 <!--<p class="footer-info">Fellowship locations vary monthly</p>-->
                 <!--<p class="footer-info"></p>Phone: (123) 456-7890</p>-->
-                <p class="footer-info"></p>Email: ifgfstl@gmail.com</p>
+              
                 <a href="index.html">
                     <img src="images/IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
                 </a>
                 <a href="https://www.facebook.com/groups/100389723447571" class="facebook-link">
                     <i class="fab fa-facebook"></i>
                 </a>
+                <p class="footer-info"></p>Email: ifgfstl@gmail.com</p>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
-                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
-                    <button class="btn" type="submit">Send</button>
+                <form onsubmit="sendEmail(); reset(); return false;" name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" id="message" placeholder="Message"></textarea>
+                    <button class="btn" type="submit">Connect</button>
+                    
                 </form>
             </div>
         </footer>
     </body>
 </html>
+
 
 <script>
     const currentPageUrl = window.location.pathname;
@@ -132,7 +147,7 @@ highlightActiveLink();
 
     const images = [
     "https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80",
-    "images/july-handling-conflicts.png"
+    "images/august-2023-sermon.png"
     
   ];
   
@@ -150,7 +165,8 @@ highlightActiveLink();
         welcomeText.textContent = "Welcome Home";
         welcomeText.style.backgroundColor = "transparent";
         welcomeText.style.borderRadius = "0";
-        welcomeText.style.fontSize = "110px";
+        welcomeText.style.fontSize = "90px";
+        
   } else if (currentImageIndex === 0) {
         welcomeText.textContent = "Join our August 2023 Series";
         welcomeText.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
@@ -169,11 +185,31 @@ highlightActiveLink();
   }
 
   }
+
+  function changeImage() {
+    var imgElement = document.querySelector(".prayer-request");
+    imgElement.src = "images/prayer-request-big.png";
+    imgElement.style.height = "10%";
+}
+
+// Check screen width on window resize
+window.addEventListener("resize", function() {
+    var screenWidth = window.innerWidth;
+
+    if (screenWidth < 800) {
+        changeImage();
+    } else {
+        // Reset image source and height if screen width is not less than 800
+        var imgElement = document.querySelector(".prayer-request");
+        imgElement.src = "images/prayer-request.png";
+        imgElement.style.height = "auto"; // Reset to default height
+    }
+});
   
   // Call the function initially
   changeBackgroundImage();
   
   // Set the interval to change background every 3 seconds (adjust the time as needed)
-  setInterval(changeBackgroundImage, 5000);
+  setInterval(changeBackgroundImage, 3500);
 
 </script>
