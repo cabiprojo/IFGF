@@ -171,7 +171,7 @@
         width:380px;
     }
 
-    form input, form textarea {
+    form input, form textarea, .btn {
         max-width:460px;
     }
 
@@ -338,6 +338,10 @@
      
         }
 
+        .prayer-description{
+            font-size: 22px;
+        }
+
    
     }
 
@@ -353,16 +357,18 @@
         }
 
         .welcome{
-            font-size: 70px !important;
+            font-size: 75px !important;
         }
 
         .location-asterik{
             width:380px;
         }
 
-        form input, form textarea {
+        form input, form textarea, .btn {
             max-width:300px;
         }
+
+        
     
     }
   
