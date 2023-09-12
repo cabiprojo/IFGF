@@ -1,100 +1,99 @@
-@media (max-width: 1650px) {
-    .box {
-        width: 350px; /* Initially display 3 boxes per row */
-        height:220px;
-    
-        /* Add other box styles as desired */
-      }
-
-      .gallery{
-        padding:0 0 100px 0;
-
-       
+@media (max-width: 1850px) {
+    .partner-links{
+    padding-left: 10%;
     }
-
 }
 
+@media (max-width: 1650px) {
+    .box {
+        width: 350px;
+        height:220px;
+      }
+      .gallery{
+        padding:0 0 100px 0; 
+    }
+    
+    .vision-images {
+       
+        height:400px;
+       
+      }
+    
+}
 
 @media (max-width: 1350px) {
-    .mission-about{
-        height:500px;
-    }
-
     .mission span{
         font-size: 80px;
-
     }
-
- 
     .mission-block {
         font-size: 50px;
         height:150px;
     }
+    .mission-about {
+        padding-left:10%;
+        font-size: 30px;
+    }
+    .vision-about {
+        padding-left:10%;
+    }
+    .partners-about {
+        padding-left:10%;
+    }
+    .IFGF-global-link {
+        width:330px;
+    }
     
+    .IFGF-austin-link {
+      
+        width:300px;
+    }
+
+    
+    
+    .mission-statement{
+        font-size: 25px;
+    }
     .arch {
         width:450px;
-       
     }
     
-
-}
-
-@media (max-width: 1150px) {
-    .vision-about{
-        height:1050px;
-        
-    }
 }
 
 
 @media (max-width: 1050px) {
-
     #header{
-        /*background-color: rgba(0, 0, 0, 0.9); */
-       
-   
-       
-        background-size: cover; /* Adjusted property */
+        background-size: cover;
         background-position: 20% center;
     }
-
     .mission-block {
-       
         height: 250px;
     }
-
-    
-
-
     .mission-about h1{
         font-size: 60px;
        }
     .mission-statement {
-        
         font-size: 24px;
     }
-
-    .welcome-block {
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        background-size: 100%;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
-        font-size: 90px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
+    .partner-links{
+        padding-left: 5%;
+       
+        }
     .arch {
         width:370px;
-       
+    }
+
+    .IFGF-global-link {
+        width:290px;
+    }
+    
+    .IFGF-austin-link {
+      
+        width:270px;
     }
 
     
+  
+
 
 }
 
@@ -144,9 +143,9 @@
     }
     
 
-      .welcome-block{
+      .welcome{
         text-align: center;
-        font-size: 80px;
+        font-size: 50px;
   
       }
 
@@ -238,18 +237,17 @@
 
 
        .mission-about {
-        padding-left:20px;
-        height:500px;
+        padding-left:5%;
+        
         font-size: 30px;
     }
 
     .vision-about{
-        height:1050px;
-        padding-left:20px;
+        
+        padding-left:5%;
     }
 
-
-  
+   
 
        .mission-statement {
         width:480px;
@@ -262,12 +260,21 @@
 
        .partner-links{
         flex-direction: column;
+        
+    }
+
+    .team-pfps{
+        flex-direction: column;
+    }
+
+    .team-block{
+        height:fit-content;
     }
 
        .partners-about {
-        height:500px;
-        font-size: 30px;
-        padding-left:20px;
+        
+        
+        padding-left:5%;
        }
 
        .IFGF-global-link {
@@ -304,15 +311,15 @@
       
         }
 
+        .fa.fa-angle-down{
+            left:46%;
+            
+        }
+        
+
         .service-info {
             width:400px;
             padding-bottom:50px;
-        }
-
-        .vision-about {
-        
-            height:900px;
-           
         }
 
   
@@ -329,8 +336,8 @@
 
         .vision-images {
             padding-top: 40px;
-            height:auto;
             width:95%;
+            
           }
 
           .community-gallery {
@@ -357,7 +364,12 @@
         }
 
         .welcome{
-            font-size: 75px !important;
+            font-size: 55px;
+        }
+
+        .small-welcome{
+            font-size: 70px;
+            padding-left: 0%;
         }
 
         .location-asterik{
