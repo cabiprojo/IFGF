@@ -36,34 +36,60 @@ a {
 }
 
 .our-mission {
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(59, 156, 247);
     margin-bottom:20px;
 }
 
 .mission-about {
     text-align:left;
-    font-size: 67px;
+    padding-left: 14%;
+    font-size: 77px;
     padding-top: 50px;
-    padding-left:50px;
-    height:400px;
+    justify-content: center;
+    height:fit-content;
     background-color: white;
     
 }
 
 .mission-statement {
+    
+    text-align: left;
     width:max-content;
     color:rgb(109, 107, 107);
-    font-size: 27px;
+    font-size: 34px;
     margin-top:20px;
+}
+
+.vision-about {
+    
+    padding-top: 100px;
+    padding-left:14%;
+    height:fit-content;
+    background-color: white;
+}
+.our-vision {
+    font-size: 50px;
+    color: rgb(59, 156, 247);
+}
+
+.vision-subheading{
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.vision-images {
+  padding-top: 40px;
+  height:500px;
+  width: auto;
 }
 
 .partners-about {
     
     font-size: 40px;
     padding-top: 50px;
-    padding-left:50px;
-    height:400px;
+    padding-left:14%;
+    height:fit-content;
     background-color: white;
 }
 
@@ -71,43 +97,26 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    padding-left: 20%;
 
-    text-align: center;
+  
 }
 
 .our-partners {
     color: rgb(59, 156, 247);
 }
 
+.IFGF-global-link {
+    width:390px;
+}
+
 .IFGF-austin-link {
     padding-top: 30px;
     padding-left:150px;
-    width:250px;
+    width:370px;
 }
 
-.vision-about {
-    font-size: 40px;
-    padding-top: 50px;
-    padding-left:50px;
-    height:600px;
-    background-color: white;
-}
-.our-vision {
-    font-size: 30px;
-    color: rgb(59, 156, 247);
-}
 
-.vision-subheading{
-    padding-top: 15px;
-    font-size: 20px;
-}
-
-.vision-images {
-  padding-top: 40px;
-  height:450px;
-  width: auto;
-}
 
 .team-block {
     text-align: center;
@@ -115,9 +124,22 @@ a {
     padding-top: 30px;
     height:800px;
     background-color: white;
+    
 }
 
+.djing{
+    padding-right: 5%;
+}
+
+.luke{
+    padding-bottom:40px;
+}
+
+
+
 .team-pfps {
+    display: flex;
+  justify-content: center;
     font-size: 30px;
 }
 
