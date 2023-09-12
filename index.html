@@ -29,17 +29,17 @@
                 </nav>
             </div>
             <div class="welcome-block">
-                <p class="welcome">Welcome Home</p>
+                <p class="welcome"><span class="welcome1"><span class="small-welcome">WELCOME TO</span><br> IFGF ST LOUIS<br></span>
+                    <a href="about.html"><span class="who-we-are">WHO WE ARE</span></a></p>
+                
+                <p class="join-sermon">Join our September 2023 series</p>
             </div>
             <a href="#mission-block"><i  class="fa fa-angle-down"></i></a>
-
         </div>
-
         <main>
             <div class="mission-block" id="mission-block">
                 <p class="mission"><span>PEOPLE IS OUR MISSION</span><br>CONNECT WITH GOD. MAKE DISCIPLES.</p>
             </div>
-
             <div class="service-block">
                 <div class="service-left">
                     <h2>Service Time</h2>
@@ -50,10 +50,7 @@
                         <a href="https://us02web.zoom.us/j/82275259502?pwd=cTlNS0lYbXloZkFWMXZWbUNsTmxNdz09" class="contact-us-link">Zoom</a></p>
                 </div>
                 <div class="service-right">
-                    <!-- Place your images here -->
                     <img src="https://media.architecturaldigest.com/photos/5b0d95f0a7a427430454e6c8/4:3/w_2923,h_2192,c_limit/GettyImages-186832657.jpg" alt="arch" class="arch">
-
-                    <!--<img src="image2.jpg" alt="Image 2"> -->
                 </div>
             </div>
             <div class="prayer-block">
@@ -63,21 +60,13 @@
                     if you wish for your name/email to remain anonymous, enter PRAY.
                 </p>
             </div>
-
-
             <div class="event-block">
                 <p class="upcoming-events">Upcoming Events</p>
             </div>
-
         </main>
-
         <footer id="footer">
             <div class="contact-left">
                 <p class="connect-with-us">CONNECT WITH US</p>
-                <!--<h3>WE WOULD LOVE TO HEAR FROM YOU</h3>-->
-                <!--<p class="footer-info">Fellowship locations vary monthly</p>-->
-                <!--<p class="footer-info"></p>Phone: (123) 456-7890</p>-->
-              
                 <a href="index.html">
                     <img src="images/IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
                 </a>
@@ -92,7 +81,6 @@
                     <input type="email" name="Email" id="email" placeholder="Email" required>
                     <textarea name="Message" rows="6" id="message" placeholder="Message"></textarea>
                     <button class="btn" type="submit">Connect</button>
-                    
                 </form>
             </div>
         </footer>
@@ -147,13 +135,14 @@ highlightActiveLink();
 
     const images = [
     "https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80",
-    "images/august-2023-sermon.png"
+    "images/september-2023-sermon.png"
     
   ];
   
   let currentImageIndex = 0;
   const indexHeader = document.querySelector(".index-header");
   const welcomeText = document.querySelector(".welcome");
+  const joinSermon = document.querySelector(".join-sermon");
   
   function changeBackgroundImage() {
 
@@ -162,22 +151,22 @@ highlightActiveLink();
     currentImageIndex = (currentImageIndex + 1) % images.length;
 
     if (currentImageIndex === 1) {
-        welcomeText.textContent = "Welcome Home";
-        welcomeText.style.backgroundColor = "transparent";
-        welcomeText.style.borderRadius = "0";
-        welcomeText.style.fontSize = "90px";
+        joinSermon.style.display="none";
+        welcomeText.style.display="block";
+        
         
   } else if (currentImageIndex === 0) {
-        welcomeText.textContent = "Join our August 2023 Series";
-        welcomeText.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-        welcomeText.style.borderRadius = "20px";
-        welcomeText.style.fontSize = "70px";
+        joinSermon.style.display="block";
+        welcomeText.style.display = "none";
+        joinSermon.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        joinSermon.style.borderRadius = "20px";
+        joinSermon.style.fontSize = "70px";
         const screenWidth = window.innerWidth;
         if (screenWidth < 600) {
-        welcomeText.textContent = "Join our ";
-        const lineBreak = document.createElement("br");
-        welcomeText.appendChild(lineBreak);
-        welcomeText.appendChild(document.createTextNode("August 2023 Series"));
+        joinSermon.textContent = "Join our ";
+
+        joinSermon.appendChild(document.createTextNode("September 2023 Series"));
+        joinSermon.style.fontSize = "50px";
         }
 
 // Append the new span element to the welcomeText
