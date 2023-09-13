@@ -39,8 +39,8 @@
   }
   
   .box {
-    width: 400px; /* Initially display 3 boxes per row */
-    height:250px;
+    width: 350px; /* Initially display 3 boxes per row */
+    height:220px;
 
    
     box-sizing: border-box;
