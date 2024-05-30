@@ -6,34 +6,44 @@
         <title>IFGF St Louis</title>
         <link rel="shortcut icon" type="x-icon" href="images/favicon.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="giving.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <script src="main.js"></script>
     </head>
 <body>
-    <div id="header">
+    <div id="header" class="about-header">
         <div class="container">
             <nav>
                 <a href="index.html">
                     <img src="images/IFGF-STL-LOGO.png" class="logo" alt="IFGF Logo">
                 </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="#footer">Connect</a></li>
+                <ul id="sidemenu">
+                    <li><a href="index.html" id="home-link">Home</a></li>
+                    <li><a href="about.html" id="about-link">About</a></li>
+                    <li><a href="community.html" id="community-link">Community</a></li>
+                    <li><a href="#footer" onclick="closemenu()">Connect</a></li>
                     <a href="giving.html" class="give-link">Give</a>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>  
             </nav>
         </div>
     </div>
-
+    <div class="top-banner giving">
+        <div class="top-banner-p"><p>Giving at IFGF St. Louis</p></div>
+    </div>
+    <div class="directions-giving">
+        <p class="online-giving">Online Giving</p><br>
+        <p class="directions-description">Our primary platform for online giving is via Venmo, the QR code can be scanned below.
+        </p>
+        <img src="images/QR.jpg" class="QR-code" alt="QR">
+    </div>
     <footer id="footer">
         <div class="contact-left">
             <p class="connect-with-us">CONNECT WITH US</p>
-            <!--<h3>WE WOULD LOVE TO HEAR FROM YOU</h3>-->
-            <!--<p class="footer-info">Fellowship locations vary monthly</p>-->
-            <!--<p class="footer-info"></p>Phone: (123) 456-7890</p>-->
             <p class="footer-info"></p>Email: ifgfstl@gmail.com</p>
-            
-
             <a href="index.html">
                 <img src="images/IFGF-STL-LOGO.png" class="logo-footer" alt="IFGF Logo">
             </a>
@@ -41,8 +51,6 @@
             <a href="https://www.facebook.com/groups/100389723447571" class="facebook-link">
                 <i class="fab fa-facebook"></i>
             </a>
-            
-
         </div>
         <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -52,9 +60,6 @@
                 <button class="btn" type="submit">Send</button>
             </form>
         </div>
-       
-        
     </footer>
-    
 </body>
 </html>
