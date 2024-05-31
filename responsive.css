@@ -159,6 +159,15 @@
     .logo-footer{
         padding-top:50px;
     }
+    
+    @media (max-width: 600px) {
+    .top-banner-p{
+        font-size: 50px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    }
+    
 
 /*ABOUT===================================*/
     .top-banner{
@@ -171,6 +180,7 @@
         background-size: cover;
         background-position: center bottom 50% ;
     }   
+
     .bold-letter{
         color: white; /* Set the color for the first letter of each span */
         font-size: 60px;
@@ -209,6 +219,7 @@
         padding-left:0px;
         width:250px;
     }
+ 
     
 /*COMMUNITY========================*/
     .modal-content {
@@ -298,9 +309,7 @@
     }
 
     @media (max-width: 600px) {
-        .top-banner-p{
-            font-size: 50px;
-        }
+        
         .QR-code{
             width:80%;
         }
