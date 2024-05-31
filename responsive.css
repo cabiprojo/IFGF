@@ -8,17 +8,13 @@
     .box {
         width: 350px;
         height:220px;
-      }
-      .gallery{
+    }
+    .gallery{
         padding:0 0 100px 0; 
     }
-    
     .vision-images {
-       
         height:400px;
-       
-      }
-    
+    }
 }
 
 @media (max-width: 1350px) {
@@ -42,59 +38,44 @@
     .IFGF-global-link {
         width:330px;
     }
-    
     .IFGF-austin-link {
-      
         width:300px;
     }
-
-    
-    
     .mission-statement{
         font-size: 25px;
     }
     .arch {
         width:450px;
     }
-    
 }
-
 
 @media (max-width: 1050px) {
     #header{
         background-size: cover;
-        background-position: 20% center;
+        background-position: center;
     }
     .mission-block {
         height: 250px;
     }
     .mission-about h1{
         font-size: 60px;
-       }
+    }
     .mission-statement {
         font-size: 24px;
     }
     .partner-links{
         padding-left: 5%;
-       
-        }
+    }
     .arch {
         width:370px;
     }
-
     .IFGF-global-link {
         width:290px;
     }
-    
     .IFGF-austin-link {
       
         width:270px;
     }
-
-    
-  
-
-
 }
 
 @media (max-width: 900px) {
@@ -104,8 +85,7 @@
         color: white;
         z-index: 1;
         cursor:pointer;
-      }
-
+    }
     nav ul{
         background-color:rgb(0, 0, 0);
         position:fixed;
@@ -117,110 +97,73 @@
         padding-top:50px;
         z-index: 2;
         transition:0.5s;
-      }
-
+    }
       nav ul li{
         display:block;
         margin:25px;
         z-index: 50;
-      }
-    
+    }
       nav ul .fas{
         position: absolute;
         top:25px;
         left:25px;
         cursor:pointer;
-      }
-
-      #header{
-        /*background-color: rgba(0, 0, 0, 0.9); */
-       
-     
-        height:100vh;
-        background-size: cover; /* Adjusted property */
-
-        
     }
-    
-
+      #header{
+        height:100vh;
+        background-size: cover; 
+    }
       .welcome{
         text-align: center;
         font-size: 50px;
-  
-      }
-
+    }
       .mission-block {
         font-size: 40px;
         height: 200px;
     }
-
       .mission span{
-        font-size: 60px;
-       
+        font-size: 60px;  
     }
-
-   
     .service-block {
         flex-direction: column;
     }
-
-
-
     .location-asterik{
         width:380px;
     }
-
     form input, form textarea, .btn {
         max-width:460px;
     }
-
     .contact-left {
         padding-left:0px;
         line-height: 40px;
         flex-basis:50%;
         text-align: center;
-       }
-
+    }
     .contact-right form {
         margin-left: auto;
         margin-right: auto;
-       
-       }
-
-       .arch {
-        width:350px;
-       
     }
-
+    .arch {
+        width:350px;
+    }
     .service-left h2 {
         font-size: 30px;
     }
-
     .service-left p {
         font-size: 20px;
     }
-
-
     footer {
         flex-direction: column;
         height:700px;
     }
-
-
-
-       .logo-footer{
+    .logo-footer{
         padding-top:50px;
-      
     }
 
-
-       /*ABOUT-------------------------------------------------------*/
-
-
-       .top-banner{
+/*ABOUT===================================*/
+    .top-banner{
         text-align: center;
         font-size: 50px;
-        
         padding-top: 0px;
         height:500px;
         color:white;
@@ -228,159 +171,122 @@
         background-size: cover;
         background-position: center bottom 50% ;
     }   
-
     .bold-letter{
         color: white; /* Set the color for the first letter of each span */
         font-size: 60px;
         font-weight: bold;
     }
-
-
        .mission-about {
         padding-left:5%;
-        
         font-size: 30px;
     }
-
-    .vision-about{
-        
+    .vision-about{  
         padding-left:5%;
     }
-
-   
-
-       .mission-statement {
+    .mission-statement {
         width:480px;
         font-size: 25px;
     }
-
-
-
-   
-
-       .partner-links{
+    .partner-links{
         flex-direction: column;
-        
     }
-
     .team-pfps{
         flex-direction: column;
     }
-
     .team-block{
         height:fit-content;
+        font-size: 40px;
     }
-
-       .partners-about {
-        
-        
+    .partners-about {
         padding-left:5%;
-       }
-
-       .IFGF-global-link {
+    }
+    .IFGF-global-link {
         padding-left:0px;
         width:250px;
     }
-
-        .IFGF-austin-link {
-            padding-top: 30px;
-            padding-left:0px;
-            width:250px;
-        }
-
-        /*350 220*/
+    .IFGF-austin-link {
+        padding-top: 30px;
+        padding-left:0px;
+        width:250px;
+    }
     
-       /* COMMUNITY */
-       .modal-content {
-
-        
+/*COMMUNITY========================*/
+    .modal-content {
         width: 100%;
-
-      }
+    }
+    .quote{
+        font-size: 30px;
+    }
+    .proverbs{
+        font-size: 18px;
+    }
     }
 
-    
-
     @media (max-width: 600px) {
-        
-
         #header{
-           
             height:100vh;
             background-size: cover; /* Adjusted property */
-      
         }
-
         .fa.fa-angle-down{
             left:46%;
-            
         }
-        
-
         .service-info {
             width:400px;
             padding-bottom:50px;
         }
-
-  
-
         .mission-block {
             font-size: 40px;
             height: 320px;
         }
-
         .mission-statement {
             max-width:90%;
             font-size: 22px;
         }
-
         .vision-images {
             padding-top: 40px;
             width:95%;
-            
-          }
-
-          .community-gallery {
-            padding-left:0 !important;;
-     
         }
-
+        .team-pfps img{
+            padding-top: 50px;
+            width:auto;
+            height:300px;
+        }
+        .community-gallery {
+            padding-left:0 !important;;
+            padding-top:80px;
+        }
         .prayer-description{
             font-size: 22px;
         }
-
-   
     }
 
-
     @media (max-width: 480px) {
-  
-
         #header{
-     
             height:100vh;
             background-size: cover; /* Adjusted property */
-            
         }
-
         .welcome{
-            font-size: 55px;
+            font-size: 40px;
         }
-
         .small-welcome{
-            font-size: 70px;
+            font-size: 35px;
             padding-left: 0%;
         }
-
+        .who-we-are{
+            padding: 15px;
+        }
+        .event-block {
+            font-size: 50px;
+        }
+        .connect-with-us{
+            font-size: 30px;
+        }
         .location-asterik{
             width:380px;
         }
-
         form input, form textarea, .btn {
             max-width:300px;
         }
-
-        
-    
     }
   
+    /*GIVING========================*/
