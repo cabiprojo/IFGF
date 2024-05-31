@@ -63,3 +63,58 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const currentPageUrl = window.location.pathname;
+
+// Function to highlight the active link based on the current page
+function highlightActiveLink() {
+    const homeLink = document.getElementById("home-link");
+    const aboutLink = document.getElementById("about-link");
+    const communityLink = document.getElementById("community-link");
+    // Add other link variables for other pages as needed
+
+    if (currentPageUrl.includes("index.html")) {
+        homeLink.classList.add("active");
+    } else {
+        homeLink.classList.remove("active");
+    }
+
+    if (currentPageUrl.includes("about.html")) {
+        aboutLink.classList.add("active");
+    } else {
+        aboutLink.classList.remove("active");
+    }
+
+    if (currentPageUrl.includes("community.html")) {
+        communityLink.classList.add("active");
+    } else {
+        communityLink.classList.remove("active");
+    }
+
+    // Add similar if-else blocks for other pages as needed
+}
+
+// Call the function to highlight the active link when the page loads
+highlightActiveLink();
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right="0";
+    }
+    function closemenu() {
+        sidemenu.style.right="-200px";
+    }
+
+    const arrowButtons = document.querySelectorAll(".arrow-btn");
+
+    arrowButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const nextModalId = button.getAttribute("data-next-modal");
+      const currentModal = event.target.closest(".modal");
+      const nextModal = document.getElementById(nextModalId);
+      currentModal.style.display = "none";
+      nextModal.style.display = "block";
+    });
+  });
+</script>
