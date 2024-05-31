@@ -87,7 +87,6 @@
     </body>
 </html>
 
-
 <script>
     const currentPageUrl = window.location.pathname;
 
@@ -121,22 +120,16 @@ function highlightActiveLink() {
 
 // Call the function to highlight the active link when the page loads
 highlightActiveLink();
-
-
     var sidemenu = document.getElementById("sidemenu");
-
     function openmenu() {
         sidemenu.style.right="0";
     }
     function closemenu() {
         sidemenu.style.right="-200px";
     }
-
-
     const images = [
     "https://images.unsplash.com/photo-1514286969571-5142af56b991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yc2hpcCUyMGhhbmRzfGVufDB8fDB8fHww&w=1000&q=80",
     "images/may-2024-sermon.png"
-    
   ];
   
   let currentImageIndex = 0;
@@ -145,36 +138,29 @@ highlightActiveLink();
   const joinSermon = document.querySelector(".join-sermon");
   
   function changeBackgroundImage() {
-
-
     indexHeader.style.backgroundImage = `url(${images[currentImageIndex]})`;
     currentImageIndex = (currentImageIndex + 1) % images.length;
 
     if (currentImageIndex === 1) {
         joinSermon.style.display="none";
         welcomeText.style.display="block";
-        
-        
-  } else if (currentImageIndex === 0) {
+    } 
+    else if (currentImageIndex === 0) {
         joinSermon.style.display="block";
         welcomeText.style.display = "none";
-        joinSermon.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        joinSermon.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
         joinSermon.style.borderRadius = "20px";
         joinSermon.style.fontSize = "70px";
         const screenWidth = window.innerWidth;
         if (screenWidth < 600) {
         joinSermon.textContent = "Join our ";
-
-        joinSermon.appendChild(document.createTextNode("September 2023 Series"));
-        joinSermon.style.fontSize = "50px";
+        joinSermon.appendChild(document.createTextNode("May 2024 "));
+        joinSermon.appendChild(document.createTextNode("Sermon Series"));
+        joinSermon.style.fontSize = "40px";
         }
-
-// Append the new span element to the welcomeText
-
   }
 
   }
-
   function changeImage() {
     var imgElement = document.querySelector(".prayer-request");
     imgElement.src = "images/prayer-request-big.png";
