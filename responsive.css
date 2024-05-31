@@ -290,3 +290,21 @@
     }
   
     /*GIVING========================*/
+    @media (max-width: 1000px) {
+        .directions-description{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .top-banner-p{
+            font-size: 50px;
+        }
+        .QR-code{
+            width:80%;
+        }
+        .directions-description{
+            font-size: 22px;
+        }
+    }
