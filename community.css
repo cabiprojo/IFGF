@@ -1,9 +1,6 @@
-
-
 .top-banner.community{
     text-align: center;
     font-size: 60px;
-    
     padding-top: 0px;
     height:500px;
     color:white;
@@ -13,17 +10,30 @@
 }
 
 .top-banner-p{
-    
     padding-top: 160px;
     background-color: rgba(0, 0, 0, 0.4) !important;
     height:100%;
 }
 
+.verse{
+  background-color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-style:italic;
+}
+
+.quote{
+  font-size: 40px;
+}
+
+.proverbs{
+  font-size: 25px;
+}
+
 .community-gallery {
     text-align:left;
     font-size: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
     padding-left:50px !important;
     height:fit-content;
     background-color: white;
@@ -33,27 +43,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 100px;
     padding-left: 100px;
     padding-right: 200px;
- 
   }
   
   .box {
-    width: 350px; /* Initially display 3 boxes per row */
-    height:220px;
-
-   
+    width: 400px; 
+    height:250px;
     box-sizing: border-box;
-
     color:white;
     font-weight: bold;
     text-align: center;
     line-height: 200px;
     cursor: pointer;
     transition: 0.3s;
-   background-color: rgb(91, 92, 92);
-
-    /* Add other box styles as desired */
+    background-color: rgb(91, 92, 92);
   }
 
   .box p{
@@ -62,7 +67,6 @@
     height:100%;
     width:100%;
   }
-
 
   .box:hover{
     transform: scale(1.02);
@@ -78,32 +82,26 @@
     height:auto;
   }
 
-    .box.yearEaster {
+  .box.yearEaster {
     position: relative;
     background-image: url("images/2014-easter-group.jpg");
     background-position: center bottom 80%;
     background-size: 130%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-
-
  
   .box.yearXmas {
     background-image:url("images/2016-xmas-group.jpg");
     background-position: center bottom 60% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
-    
   }
-
 
   .box.yearRetreat {
     background-image:url("images/2016-retreat-group.jpg");
     background-position: center bottom 80% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
-    
   }
 
   .box.yearMonthly {
@@ -111,12 +109,10 @@
     background-position: center bottom 60% ;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0.5) !important;
-    
   }
 
-
   .modal {
-    display: none; /* Hide the modal by default */
+    display: none; 
     position: fixed;
     z-index: 8;
     left: 0;
@@ -139,9 +135,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     margin: 10% auto;
-    
     width: 80%;
-
     height: fit-content;
   }
 
@@ -154,24 +148,29 @@
     font-size: 60px;
     color:white;
     background-color: rgba(0, 0, 0, 0.5);
-
     border: none;
     width:100px;
     height:auto;
   }
 
   .arrow-btn:hover{
-    background-color: rgba(0, 0, 0, 0.8);;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .left-arrow {
     top:50%;
     left: 2%;
   }
+  .left-arrow:hover{
+    cursor: pointer;
+  }
   
   .right-arrow {
     top:50%;
     right: 2%;
+  }
+  .right-arrow:hover{
+    cursor: pointer;
   }
   
   .close {
@@ -189,7 +188,6 @@
   .close:hover,
   .close:focus {
     color: white;
-    
     cursor: pointer;
   }
   
