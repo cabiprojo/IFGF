@@ -17,6 +17,26 @@
     }
 }
 
+@media (max-width: 1450px) {
+    /* ABOUT (team profile pics) */
+    .team-pfps{
+        flex-direction: column;
+        padding-right: 0%;
+    }
+
+    .djing{
+        padding-right: 0;
+    }
+    
+    .tanti{
+        padding-right: 0;
+    }
+    
+    .luke{
+        padding-right: 0;
+    }
+}
+
 @media (max-width: 1350px) {
     .mission span{
         font-size: 80px;
