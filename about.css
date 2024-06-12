@@ -13,7 +13,6 @@ a {
 .top-banner.about{
     text-align: center;
     font-size: 60px;
-    
     padding-top: 0px;
     height:500px;
     color:white;
@@ -23,7 +22,6 @@ a {
 }
 
 .top-banner-p{
-    
     padding-top: 160px;
     background-color: rgba(0, 0, 0, 0.5) !important;
     height:100%;
@@ -49,11 +47,9 @@ a {
     justify-content: center;
     height:fit-content;
     background-color: white;
-    
 }
 
 .mission-statement {
-    
     text-align: left;
     width:max-content;
     color:rgb(109, 107, 107);
@@ -62,12 +58,12 @@ a {
 }
 
 .vision-about {
-    
     padding-top: 100px;
     padding-left:14%;
     height:fit-content;
     background-color: white;
 }
+
 .our-vision {
     font-size: 50px;
     color: rgb(59, 156, 247);
@@ -85,7 +81,6 @@ a {
 }
 
 .partners-about {
-    
     font-size: 40px;
     padding-top: 50px;
     padding-left:14%;
@@ -98,8 +93,6 @@ a {
     flex-direction: row;
     align-items: center;
     padding-left: 20%;
-
-  
 }
 
 .our-partners {
@@ -116,26 +109,22 @@ a {
     width:370px;
 }
 
-
-
 .team-block {
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
-    height:800px;
+    height:auto;
     background-color: white;
-    
 }
 
-.djing{
+.tanti{
+    padding-left: 5%;
     padding-right: 5%;
 }
 
 .luke{
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
-
-
 
 .team-pfps {
     display: flex;
@@ -152,5 +141,11 @@ a {
     padding-top: 50px;
     width:auto;
     height:500px;
+}
+
+@media (max-width: 600px) {
+    .top-banner.p{
+        font-size: 10px !important;
+    }
 }
     
